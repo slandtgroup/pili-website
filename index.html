@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -1065,6 +1066,25 @@ html, body { max-width:100%; overflow-x:hidden; }
 @media(max-width:620px){.plan-modal-card{padding:28px 20px}.plan-modal-card h2{font-size:26px}}
 
 </style>
+
+<style id="pili-mobile-final-fix">
+@media (max-width:640px){
+ html,body{overflow-x:hidden}
+ *,*::before,*::after{box-sizing:border-box}
+ h1,h2,h3,p,li,a,button,label,.container,.card,.pricing-card{max-width:100%}
+ .hero h1{font-size:clamp(31px,8.7vw,42px)!important;line-height:1.24!important;letter-spacing:-.045em!important;word-break:keep-all!important;overflow-wrap:normal!important}
+ .hero h1 .hero-line{display:block!important;white-space:nowrap!important}
+ .section h2,.trust-box h2,.contact-copy h2,.brand-story h2{font-size:clamp(25px,7vw,32px)!important;line-height:1.35!important;letter-spacing:-.025em!important;word-break:normal!important;overflow-wrap:break-word!important}
+ p,li{word-break:normal;overflow-wrap:break-word}
+ .btn,.cta,.pricing-cta a,.plan-modal-cta,button[type="submit"]{width:100%;min-height:52px;padding-left:14px!important;padding-right:14px!important;white-space:normal!important;line-height:1.35!important;text-align:center}
+ .pricing-grid,.menu-grid,.contact-grid{grid-template-columns:minmax(0,1fr)!important}
+ .pricing-card,.menu-card,.contact-grid>*,.trust-box{min-width:0!important}
+ input,textarea,select{width:100%!important;min-width:0!important;max-width:100%!important}
+ .plan-modal-card{width:calc(100vw - 28px)!important;max-width:calc(100vw - 28px)!important}
+}
+@media (max-width:360px){.hero h1{font-size:29px!important;letter-spacing:-.05em!important}}
+</style>
+
 </head>
 <body>
   <header class="site-header">
@@ -1094,7 +1114,7 @@ html, body { max-width:100%; overflow-x:hidden; }
         <div class="hero-copy">
           <div class="pili-brand-block"><span class="pili-brand"><span class="pili-brand-main">PILI</span><span class="pili-brand-reading">（ピリ）</span><span class="pili-by">by S LAND T Co.,Ltd.</span></span></div>
 <p class="eyebrow">小さい会社専門の、社外IT担当。</p>
-          <h1><span class="hero-title-line">毎月の「めんどくさい」を、</span><span class="hero-title-line"><em>会社の時間</em>に変える。</span></h1>
+          <h1><span class="hero-line"></span><span class="hero-line"><span class="hero-title-line">毎月の「めんどくさい」を、</span><span class="hero-title-line"><em>会社の時間</em>に変える。</span></span></h1>
           <p class="lead">
             集計、転記、書類作成、Excel入力。<br>
             5〜30人規模の会社で毎月くり返している手作業を、
@@ -1661,7 +1681,8 @@ if(demoSubmit){
     <h2 id="companyModalTitle">会社概要</h2>
     <dl class="company-modal-list">
       <div><dt>会社名</dt><dd>S LAND T Co.,Ltd.</dd></div>
-      <div><dt>代表者</dt><dd>廣田 翔</dd></div>
+      <div><dt>代表者</dt><dd>廣田 翔</dd>
+<dt>事業企画・現場監修</dt><dd>山際 幸來</dd></div>
       <div><dt>本店所在地</dt><dd>東京都調布市入間町1-6-12</dd></div>
       <div><dt>設立</dt><dd>2016年11月</dd></div>
       <div><dt>事業内容</dt><dd>PILI（ピリ）｜中小・小規模事業者向け業務改善／DX支援／AI・クラウド活用支援</dd></div>
